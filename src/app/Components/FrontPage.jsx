@@ -6,11 +6,11 @@ import phone from '@/Assets/IMG/phone.png'; // Update this to your correct path
 export default function FrontPage() {
   return (
     <div className="flex flex-col items-center relative">
-      <div className="flex w-full flex-col md:flex-row justify-center items-start h-[83vh] overflow-hidden rounded-[9rem] bg-gradient-to-b from-white via-white to-green-400">  
+      <div className="flex w-full flex-col md:flex-row justify-center items-start h-[83vh] overflow-hidden rounded-[5rem] bg-gradient-to-b from-white via-white to-green-400">  
         {/* Left Section - Text and Call to Action */}
         <div className="space-y-6 w-[40%] mt-28 text-center md:text-left md:mr-8">  
-          <div className="inline-flex items-center bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full">
-            <span className="text-lg bg-white rounded-2xl px-3">New</span>
+          <div className="inline-flex items-center justify-start bg-yellow-100 text-yellow-600 w-[20rem] px-2 py-1 rounded-full">
+            <span className="text-lg bg-white rounded-2xl px-3 py-1">New</span>
             <span className="ml-2 text-lg">Beta now available</span>
             <span className="ml-2 text-lg">→</span>
           </div>
@@ -19,7 +19,7 @@ export default function FrontPage() {
             For A Brighter Future.
           </h1>
           <p className="text-lg text-gray-600">
-            Streamline your payments with GreenBank. Instant bank transfers, hassle-free bill payments, and more – all at your fingertips.
+            Streamline your payments with GreenBank. Instant bank transfers, hassle-free bill payments, and more  all at your fingertips.
           </p>
           <button className="bg-green-500 text-white text-lg px-9 py-2 rounded-lg hover:bg-green-600">
             Download App
@@ -41,7 +41,7 @@ export default function FrontPage() {
 
         {/* Right Section - Image */}
         <div className="relative mt-12 md:mt-0 md:ml-8">
-          <div className="relative" style={{ position: 'relative', bottom: '-90px' }}> 
+          <div className="relative" style={{ position: 'relative', bottom: '-70px' }}> 
             <Image
               src={phone}
               alt="Phone App Image"
