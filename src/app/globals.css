@@ -64,9 +64,15 @@
 }
 
 .card {
+  overflow: hidden; /* Ensures content stays within bounds */
+  transition: opacity 0.3s, transform 0.3s; /* Smooth transitions */
   position: sticky;
   top: 0;
   padding-top: calc(var(--index) * var(--card-top-offset));
+  display: flex;
+  justify-content: center;
+  gap: 10;
+  padding: 2rem;
 }
 
 #card_1 {
@@ -85,17 +91,34 @@
   --index: 4;
 }
 
+/* Image figure that floats outside the card */
+.image-outside {
+  position: absolute; /* Positioning the image absolutely */
+  top: 0%; /* Move the image half out of the card */
+  right: 20%; /* Aligns the image to the right */
+  width: 25%; /* Adjust width as necessary */
+  overflow: hidden; /* Hides any overflow */
+}
+
+.image-outside img {
+  width: 100%; /* Ensures the image fills the figure */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 0.5rem; /* Optional: round the corners of the image */
+}
 .card__content {
   box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
   background: white;
   color: black;
   border-radius: 1em;
   overflow: hidden;
-  display: grid;
-  grid-template-areas: "text img";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  align-items: stretch;
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  padding: 3rem;
+  border-radius: 4rem;
+  margin-top: 2rem;
+
+
 }
 
 .card__content > div {
@@ -186,6 +209,25 @@ aside p {
   margin-bottom: 1em;
 }
 
+.slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+
+/* .slider::before,
+.slider::after {
+  background: #0e0c15;
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+} */
+
 
 .slider::after {
   right: 0;
@@ -210,4 +252,63 @@ aside p {
 .slide {
   height: 100px;
   width: 250px;
+}
+
+@keyframes verticalScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.vertical-slider {
+  background-color: #0b5252; /* Customize your slider background */
+  height: 400px; /* Height of the visible area */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.vertical-slide-track {
+  display: flex;
+  flex-direction: column; /* Arrange slides in vertical order */
+  height: calc(150px * 14 * 2); /* Total height based on number of slides, duplicated for smooth looping */
+  animation: verticalScroll 40s linear infinite;
+}
+
+.vertical-slide {
+  height: 150px;
+ /* Adjusted width */
+}
+
+
+.customer-stories {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+.customer-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #083d3d;
+}
+
+.customer-subtitle {
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 20rem;
 }
