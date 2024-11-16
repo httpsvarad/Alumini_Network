@@ -64,5 +64,4 @@ A dynamic **Alumni Network** platform designed to connect alumni and students, f
 
 ## 📧 Contact
 
-- **Author**: Varad Manegopale  
-- **Email**: varad.manegopale28@gmail.com 
+**Email**: varad.manegopale28@gmail.com 
