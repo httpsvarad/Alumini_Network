@@ -47,26 +47,11 @@ A dynamic **Alumni Network** platform designed to connect alumni and students, f
 
 5. **Run the application**:
 
-   Start the backend:
+   
    ```bash
-   cd backend
    npm run dev
    ```
-
-   Start the frontend:
-   ```bash
-   cd frontend
-   npm start
-   ```
-
-6. **Build for production**:
-
-   Build the frontend:
-   ```bash
-   cd frontend
-   npm run build
-   ```
-
+   
 ---
 
 ## 💻 Contributors
