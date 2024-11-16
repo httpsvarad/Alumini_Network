@@ -72,11 +72,9 @@ A dynamic **Alumni Network** platform designed to connect alumni and students, f
 ## 💻 Contributors
 
 - **Varad Manegopale**  
-  - **Email**: varad.manegopale28@gmail.com  
 
-- **Rizvi Ahmed Abbas**  
-  - **GitHub**: https://github.com/Rizvi-Ahmed-Abbas-Nasir
-
+- **Rizvi Ahmed Abbas**
+  
 ---
 
 ## 📧 Contact
